@@ -1,6 +1,12 @@
 import React from 'react';
 import axios from 'axios';
 import { Button, Form, FormGroup, Row, Col, Card, Container, Input, Nav} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUsers} from '@fortawesome/free-solid-svg-icons';
+import {faLaptop} from '@fortawesome/free-solid-svg-icons'
+import {faMobileAlt} from '@fortawesome/free-solid-svg-icons'
+import {faSearch} from '@fortawesome/free-solid-svg-icons'
+
 
 class HomePage extends React.Component{
     render() {
@@ -23,7 +29,9 @@ class HomePage extends React.Component{
                             <Card.Body>
                                 <Card.Link href = "/users">
                                     <div class="card text-center p-3  ">
-                                        <Card.Title>ICONO</Card.Title>
+                                        <image style ={{fontSize:'1.5cm'}}>
+                                            <FontAwesomeIcon icon= {faUsers}/>
+                                        </image>
                                         <Card.Text>
                                             <h3>USUARIOS</h3>
                                         </Card.Text>
@@ -35,7 +43,9 @@ class HomePage extends React.Component{
                         <Col sm>
                             <Card.Body>
                                 <div class="card text-center p-3  ">
-                                    <Card.Title>ICONO</Card.Title>
+                                    <image style ={{fontSize:'1.5cm'}}>
+                                        <FontAwesomeIcon icon= {faLaptop}/>
+                                    </image>
                                     <Card.Text>
                                         <h3>PORTATILES</h3>
                                     </Card.Text>
@@ -48,7 +58,9 @@ class HomePage extends React.Component{
                         <Col sm>
                             <Card.Body>
                                 <div class="card text-center  p-3  ">
-                                    <Card.Title>ICONO</Card.Title>
+                                    <image style ={{fontSize:'1.5cm'}}>
+                                            <FontAwesomeIcon icon= {faMobileAlt}/>
+                                    </image>
                                    <Card.Text>
                                         <h3>CELULARES</h3>
                                     </Card.Text>
@@ -59,7 +71,9 @@ class HomePage extends React.Component{
                         <Col sm>
                             <Card.Body >
                                 <div class="card text-center p-3  ">
-                                    <Card.Title>ICONO</Card.Title>
+                                    <image style ={{fontSize:'1.5cm'}}>
+                                        <FontAwesomeIcon icon= {faSearch}/>
+                                    </image>
                                     <Card.Text>
                                         <h3>CONSULTAS</h3>
                                     </Card.Text>
