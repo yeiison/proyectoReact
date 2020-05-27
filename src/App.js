@@ -14,31 +14,6 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-
-            <li>
-              <Link to="/homePage">HomePage</Link>
-            </li>
-
-          </ul>
-        </nav>
-
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
             
@@ -64,24 +39,10 @@ function App() {
           </Route>
 
             <div className="App">
-              <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                  Editar <code>src/App.js</code> y guardar para recargar.
-                    
-                </p>
-                <Welcome/> //Componente
-                <a
-                  className="App-link"
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Aprender React
-                </a>
+              <header className="App-header"> 
+                <Login/>
               </header>
             </div>
-
         </Switch>
       </div>
     </Router>
