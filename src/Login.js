@@ -1,6 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import { Button, Form, FormGroup, Row, Col, Card, Container, Input} from 'react-bootstrap';
+import { Button, Form, FormGroup, Row, Col, Card, Container, Input, Nav} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faSignInAlt} from '@fortawesome/free-solid-svg-icons';
+
 
 class Login extends React.Component{
 
@@ -8,7 +11,7 @@ class Login extends React.Component{
         var user = {
             names: document.getElementById("userName").value,
             lastNames: document.getElementById("userLastName").value,
-            document: document.getElementById("userDocument").value,
+            userName: document.getElementById("userDocument").value,
             costeCenter: document.getElementById("userCenterCoste").value,
             
         };
@@ -28,7 +31,11 @@ class Login extends React.Component{
                 <Row  className="justify-content-md-center">
                     <Col sm={4}>
                         <Card body>
+                            
                             <Form >
+                                <image style ={{fontSize:'1.5cm', color:'green'}}>
+                                    <FontAwesomeIcon icon= {faSignInAlt}/>
+                                </image>
                                 <Form.Group controlId="formGroupEmail">
                                     <Form.Label>Usuario</Form.Label>
                                     <Form.Control type="user" placeholder="Ingrese usuario" />
@@ -41,6 +48,9 @@ class Login extends React.Component{
                                 <Button variant="outline-success" size="lg" type="submit">
                                     Login
                                 </Button>
+                                <Nav className="justify-content-end" activeKey="/home">
+                                    <Nav.Link href="/loginUsers">Registrarse</Nav.Link>
+                                </Nav  >
                             </Form>
                         </Card>
                     </Col>

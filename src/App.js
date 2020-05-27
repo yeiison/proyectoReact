@@ -7,6 +7,7 @@ import ManageUsers from'./ManageUsers';
 import Login from'./Login';
 import HomePage from'./HomePage';
 import ManageBusiness from'./ManageBusiness';
+import LoginUsers from'./LoginUsers';
 
 import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
@@ -36,6 +37,10 @@ function App() {
 
           <Route path="/business">
             <ManageBusiness />
+          </Route>
+
+          <Route path="/loginUsers">
+            <LoginUsers />
           </Route>
 
             <div className="App">
