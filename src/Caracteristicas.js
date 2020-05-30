@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { Button, Form, Row, Col, Card, Container } from 'react-bootstrap';
+import { Button, Form, Row, Col, Card, Container,  } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faHome} from '@fortawesome/free-solid-svg-icons';
 
 class Caracteristicas extends React.Component{
 
@@ -29,7 +31,14 @@ class Caracteristicas extends React.Component{
                 <Row>
                     <Col sm={8}>
                         <Card body>
-                        <Card.Header>Caracteristicas</Card.Header>
+                            <Card.Header>Caracteristicas
+                                
+                                <image href="/homePage" style ={{fontSize:'1cm'}}>
+                                        <FontAwesomeIcon icon= {faHome}/>
+                                </image>
+                               
+                            </Card.Header>
+
                             <Form id="form-caracteristica">
                                 
                                 <Form.Group as={Col} controlId="caracteristicaProcesador">

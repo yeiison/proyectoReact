@@ -55,9 +55,9 @@ class ManageUsers extends React.Component{
                         </Card>
                     </Col>
                     <Col sm={4}>
-                        <Button variant="primary" type="submit" form="form-user" onClick = {this.saveUser}>Ingresar</Button><br />
-                        <Button variant="primary" >Eliminar</Button><br />
-                        <Button variant="primary">Actualizar</Button><br />
+                        <Button style = {{margin: "1cm"}} variant="primary" type="submit" form="form-user" onClick = {this.saveUser}>Ingresar</Button><br />
+                        <Button style = {{margin: "1cm"}} variant="primary" >Eliminar</Button><br />
+                        <Button margin="5cm" size ="lg" variant="primary">Actualizar</Button><br />
                     </Col>
                 </Row>
             </Container> 

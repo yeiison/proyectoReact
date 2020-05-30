@@ -24,7 +24,7 @@ class ManageActivos extends React.Component{
             
         };
 
-        axios.post ("http://localhost:8000/api/activos/", activo)
+        axios.post ("http://localhost:8000/api/activos/", activo, {timeout:1000})
         .then((response) => {
             console.log(response);
             }, (error) => {
