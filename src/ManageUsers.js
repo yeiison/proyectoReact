@@ -28,7 +28,7 @@ class ManageUsers extends React.Component{
                 <Row>
                     <Col sm={8}>
                         <Card body>
-                        <Card.Header>Usuario</Card.Header>
+                        <Card.Header>Administrador de usuarios</Card.Header>
                             <Form id="form-user">
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="userName">

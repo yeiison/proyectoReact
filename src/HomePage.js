@@ -42,6 +42,7 @@ class HomePage extends React.Component{
 
                         <Col sm>
                             <Card.Body>
+                                <Card.Link href = "/activos">
                                 <div class="card text-center p-3  ">
                                     <image style ={{fontSize:'1.5cm'}}>
                                         <FontAwesomeIcon icon= {faLaptop}/>
@@ -50,6 +51,7 @@ class HomePage extends React.Component{
                                         <h3>PORTATILES</h3>
                                     </Card.Text>
                                 </div>
+                                </Card.Link>
                             </Card.Body>
                         </Col>
                     </Row>
@@ -57,6 +59,7 @@ class HomePage extends React.Component{
                     <Row>
                         <Col sm>
                             <Card.Body>
+                                <Card.Link href = "/celulares">
                                 <div class="card text-center  p-3  ">
                                     <image style ={{fontSize:'1.5cm'}}>
                                             <FontAwesomeIcon icon= {faMobileAlt}/>
@@ -65,11 +68,13 @@ class HomePage extends React.Component{
                                         <h3>CELULARES</h3>
                                     </Card.Text>
                                 </div>
+</Card.Link>
                             </Card.Body>
                         </Col>
 
                         <Col sm>
                             <Card.Body >
+                                <Card.Link href = "">
                                 <div class="card text-center p-3  ">
                                     <image style ={{fontSize:'1.5cm'}}>
                                         <FontAwesomeIcon icon= {faSearch}/>
@@ -78,6 +83,7 @@ class HomePage extends React.Component{
                                         <h3>CONSULTAS</h3>
                                     </Card.Text>
                                 </div> 
+</Card.Link>
                             </Card.Body>
                         </Col>
                     </Row>
