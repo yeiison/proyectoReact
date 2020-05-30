@@ -9,10 +9,8 @@ class Login extends React.Component{
 
     ValidationLogin(e) {
         var user = {
-            names: document.getElementById("userName").value,
-            lastNames: document.getElementById("userLastName").value,
-            userName: document.getElementById("userDocument").value,
-            costeCenter: document.getElementById("userCenterCoste").value,
+            userName: document.getElementById("usuario").value,
+            password: document.getElementById("password").value,
             
         };
 
@@ -38,7 +36,7 @@ class Login extends React.Component{
                                 </image>
                                 <Form.Group controlId="formGroupEmail">
                                     <Form.Label>Usuario</Form.Label>
-                                    <Form.Control type="user" placeholder="Ingrese usuario" />
+                                    <Form.Control type="usuario" placeholder="Ingrese usuario" />
                                 </Form.Group>
                                 <Form.Group controlId="formGroupPassword">
                                     <Form.Label>Password</Form.Label>
@@ -48,6 +46,7 @@ class Login extends React.Component{
                                 <Button variant="outline-success" size="lg" type="submit">
                                     Login
                                 </Button>
+                                
                                 <Nav className="justify-content-end" activeKey="/home">
                                     <Nav.Link href="/loginUsers">Registrarse</Nav.Link>
                                 </Nav  >

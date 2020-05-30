@@ -6,9 +6,9 @@ class ManageBusiness extends React.Component{
 
     saveBusiness(e) {
         var business = {
-            nomCiudad: document.getElementById("businessCity").value,
-            nomSucursal: document.getElementById("businessOffice").value,
-             
+            nomEmpresa: document.getElementById("empresaNombre").value,
+            nomCiudad: document.getElementById("empresaCiudad").value,
+            nomSubdivision: document.getElementById("empresaSucursal").value,
         };
 
         axios.post ("http://localhost:8000/api/empresas/", business)
@@ -29,13 +29,18 @@ class ManageBusiness extends React.Component{
                         <Card.Header>EMPRESAS</Card.Header>
                             <Form id="form-business">
 
-                                <Form.Group controlId="businessOffice">
-                                    <Form.Label>Nombre Sucursal</Form.Label>
+                                <Form.Group controlId="empresaNombre">
+                                    <Form.Label>Nombre Empresa</Form.Label>
                                     <Form.Control placeholder="" />
                                 </Form.Group>
 
-                                <Form.Group controlId="businessCity">
+                                <Form.Group controlId="empresaCiudad">
                                     <Form.Label>Ciudad</Form.Label>
+                                    <Form.Control placeholder="" />
+                                </Form.Group>
+
+                                <Form.Group controlId="empresaSucursal">
+                                    <Form.Label>Nombre Sucursal</Form.Label>
                                     <Form.Control placeholder="" />
                                 </Form.Group>
 
