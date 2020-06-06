@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { Button, Form, Row, Col, Card, Container } from 'react-bootstrap';
+import { Button, Form, Row, Col, Card, Container} from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faHome} from '@fortawesome/free-solid-svg-icons';
 
 class ManageCelulares extends React.Component{
 
@@ -34,7 +36,22 @@ class ManageCelulares extends React.Component{
                 <Row>
                     <Col sm={8}>
                         <Card body>
-                        <Card.Header>Celulares</Card.Header>
+                            <Row>
+                                <Col sm={10}>
+                                <Card.Header><h1>Celulares</h1></Card.Header>
+                                </Col>
+            
+                                <Col sm={2}>
+                                    <Card.Link sm={4} href = "/homePage">
+                                        <div class="card text-center p-3">
+                                            <image style ={{fontSize:'1cm'}}>
+                                                <FontAwesomeIcon icon= {faHome}/>
+                                            </image>
+                                        </div>
+                                    </Card.Link>
+                                </Col>
+                            </Row>
+
                             <Form id="form-celular">
                                 
                                 <Form.Group as={Col} controlId="celularFecha">

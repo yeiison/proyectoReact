@@ -15,7 +15,7 @@ class LoginUsers extends React.Component{
              
         };
 
-        axios.post ("http://localhost:8000/api/logins/", loginUsers)
+        axios.post ("http://localhost:8000/api/login/", loginUsers)
        
         .then((response) => {
             console.log(response);

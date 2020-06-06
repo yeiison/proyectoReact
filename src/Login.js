@@ -30,7 +30,7 @@ class Login extends React.Component{
                     <Col sm={4}>
                         <Card body>
                             
-                            <Form >
+                            <Form  id = "form-login">
                                 <image style ={{fontSize:'1.5cm', color:'green'}}>
                                     <FontAwesomeIcon icon= {faSignInAlt}/>
                                 </image>
@@ -43,7 +43,7 @@ class Login extends React.Component{
                                     <Form.Control type="password" placeholder="Password" />
                                 </Form.Group>
 
-                                <Button variant="outline-success" size="lg" type="submit">
+                                <Button variant="outline-success" size="lg" type="submit" form="form-login" onClick = {this.ValidationLogin}>
                                     Login
                                 </Button>
                                 
